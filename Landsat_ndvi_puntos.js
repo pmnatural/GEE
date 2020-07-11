@@ -1,4 +1,4 @@
-// Traigo los puntos importados del shapefile como tabla en assets y veo donde estan
+// Traigo los puntos del shapefile importados como tabla en assets y veo donde estan
 
 var points = ee.FeatureCollection(table);
 
@@ -6,7 +6,7 @@ var points = ee.FeatureCollection(table);
 Map.centerObject(points);
 Map.addLayer(points)
 
-// Entre fechas
+// Entre fechas para el analisis, ojo que mas de 500
 var inicio = '2005-01-01'
 var fin = '2011-08-31'
 
